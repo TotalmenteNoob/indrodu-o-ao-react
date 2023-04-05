@@ -8,14 +8,14 @@ import Pagina from '../components/Pagina';
 export default function Home() {
   return (
     <>
-      <Cabecalho />
-      <div className='bg-secondary py-3 text-white text-center mb-3'>
+      <Pagina titulo = "Página 1">
         <Container>
-          <h1 className='text-center text-light display-1 mt-3'>Página inicial</h1>
+          <h1>Hello World</h1>
+          <p>Parágrafo 1</p>
+          <p>Parágrafo 2</p>
+          <p>Parágrafo 3</p>
         </Container>
-      </div>
-      <h1 className='text-center text-success display-1 mt-3'>Seja bem-vindo</h1>
-      <Pagina/>
+      </Pagina>
     </>
   )
 }

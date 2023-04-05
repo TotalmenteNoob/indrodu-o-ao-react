@@ -2,14 +2,20 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import Cabecalho from './Cabecalho'
 
-const Pagina = () => {
+const Pagina = (props) => {
     return (
         <>
-            <Cabecalho/>
+            <Cabecalho />
             <div className='bg-secondary py-3 text-white text-center mb-3'>
                 <Container>
-                    <h1>Página inicial</h1>
+                    <h1>{props.titulo}</h1>
                 </Container>
+            </div>
+
+            {props.children} {/*a props.children serve para colocar o conteudo onde quiser na página*/}
+             
+            <div style={{ width: '100%' }} className='bg-secondary position-fixed bottom-0 py-3 text-center text-light'>
+                <p>&copy; Todos os direitos reservados</p>
             </div>
         </>
     )

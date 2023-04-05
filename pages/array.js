@@ -3,21 +3,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Cabecalho from '../components/Cabecalho';
 import { Container } from 'react-bootstrap';
 import styles from '../styles/Home.module.css';
+import Pagina from '../components/Pagina';
 
 const Array = () => {
+
+    const carros = ['Civic', 'Tucson', 'Celta', 'Tempra', 'Marea', 'Doblo']
+
     return (
         <>
-            <Cabecalho />
-            <div className='bg-secondary py-3 text-white text-center mb-3'>
+            <Pagina titulo="Arrays">
                 <Container>
-                    <h1 className='text-center text-light display-1 mt-3'>Página de array</h1>
+                    <ol>
+                        {carros.map(carro => (
+                            <li>{carro}</li>
+                        ))}
+                    </ol>
                 </Container>
-            </div>
-            <div style={{textAlign: 'center'}}>Array</div>
-            <div className={styles.rodape}>
-                <p>&copy; Todos os direitos reservados</p>
-            </div>
-
+            </Pagina>
         </>
     )
 }
