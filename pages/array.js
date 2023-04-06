@@ -12,10 +12,10 @@ const Array = () => {
     return (
         <>
             <Pagina titulo="Arrays">
-                <Container>
-                    <ol>
+                <Container className='d-flex  justify-content-center '>
+                    <ol className='list-group list-group-numbered'>
                         {carros.map(carro => (
-                            <li>{carro}</li>
+                            <li className='list-group-item'>{carro}</li>
                         ))}
                     </ol>
                 </Container>

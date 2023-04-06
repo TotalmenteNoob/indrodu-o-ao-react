@@ -1,0 +1,35 @@
+Comandos Front-End
+
+1 - Instalar o Git (https://git-scm.com/)
+2 - Instalar o Node(https://nodejs.org/en)
+
+// Criar projeto
+npx create-next-app@latest introducao --use-npm --example https://github.com/vercel/next-learn/tree/master/basics/learn-starter
+
+// Instalar o react bootstrap
+npm install react-bootstrap bootstrap
+
+// Comando para caso o npm esteja desatualizado!!
+npm install -g npm@9.6.2
+
+// Executar o projeto (startar o servidor)
+npm run dev
+
+// No index.js e todas as páginas criadas colar para funcionar o bootstrap:
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// instalar essa extensão ↓↓ para conseguir criar o "race" automaticamente
+ES7+ React/Redux/React-Native snippets
+
+// Criar pasta chamada "components"
+// Todos os arquivos dentro dessa pasta tem que iniciar com letra maiúscula
+
+// Dentro do arquivo criado acima ↑↑
+// Digitar o comando "race" para criar os codigos iniciais do arquivo
+
+// Código para fazer um loop de um array exibindo os vários dados do array na tela
+{carros.map(carro => (
+    <p>{carro}</p>
+))}
+
+//

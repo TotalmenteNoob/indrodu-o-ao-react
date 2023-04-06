@@ -14,7 +14,7 @@ const Pagina = (props) => {
 
             {props.children} {/*a props.children serve para colocar o conteudo onde quiser na página*/}
              
-            <div style={{ width: '100%' }} className='bg-secondary position-fixed bottom-0 py-3 text-center text-light'>
+            <div style={{ width: '100%' }} className='d-flex align-items-center justify-content-center bg-secondary position-relative bottom-0 mt-3 py-3 text-center text-light'>
                 <p>&copy; Todos os direitos reservados</p>
             </div>
         </>
