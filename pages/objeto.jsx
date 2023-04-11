@@ -25,6 +25,7 @@ const Objeto = () => {
                             <h2 >{item.marca} - {item.modelo}</h2>
                             <p>Ano: {item.ano}</p>
                             <p>Cor: {item.cor}</p>
+                            <button type="button" class="btn btn-primary m-2">Detalhes</button>
                         </div>
                     ))}
                 </Container>
