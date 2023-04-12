@@ -21,7 +21,7 @@ const Objeto = () => {
                 <Container className='d-flex flex-row flex-wrap justify-content-center'>
                     {carros.map(item => (
                         <div className='m-1 card' style={{width: '18rem'}}>
-                            <img src={item.foto} alt="" style={{width: '100%', height: '58%'}}/>
+                            <img className='card-img-top' src={item.foto} alt="" style={{width: '100%', height: '58%'}}/>
                             <h2 >{item.marca} - {item.modelo}</h2>
                             <p>Ano: {item.ano}</p>
                             <p>Cor: {item.cor}</p>
