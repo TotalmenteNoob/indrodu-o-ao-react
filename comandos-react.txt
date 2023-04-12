@@ -12,6 +12,9 @@ npm install react-bootstrap bootstrap
 // Comando para caso o npm esteja desatualizado!!
 npm install -g npm@9.6.2
 
+//comando para instalar o Axios, que faz requisiões http, como GET, POST, é necessário para utilização
+npm install axios
+
 // Executar o projeto (startar o servidor)
 npm run dev
 
@@ -32,4 +35,10 @@ ES7+ React/Redux/React-Native snippets
     <p>{carro}</p>
 ))}
 
-//
+// Comando para fazer a requisição dos dados json da API
+useEffect(()=>{
+        
+        apiFilmes.get('/movie/popular').then(resultado=>{setFilmes(resultado.data.results)})//<-pode ser qualquer nome
+
+    },[])
+
