@@ -12,7 +12,7 @@ const Cabecalho = (props) => {
           <Nav className="me-auto">
             <Nav.Link href="array">Array</Nav.Link>
             <Nav.Link href="objeto">Carros</Nav.Link>
-            <Nav.Link href="/filmes/">index de filmes</Nav.Link>
+            <Nav.Link href="#">Pricing</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
